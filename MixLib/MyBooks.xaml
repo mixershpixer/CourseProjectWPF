@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="MixLib.MyBooks"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MixLib"
+            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+               d:DesignHeight="550" d:DesignWidth="940">
+    <Grid Margin="0 0 0 0">
+        <materialDesign:TransitioningContent x:Name="Trance">
+            <materialDesign:TransitioningContent.OpeningEffects>
+                <materialDesign:TransitionEffect Duration="0:0:0.5" Kind="SlideInFromRight" />
+                <materialDesign:TransitionEffect Duration="0:0:0.5" Kind="FadeIn" />
+            </materialDesign:TransitioningContent.OpeningEffects>
+            <StackPanel Background="{x:Null}">
+                <Grid ScrollViewer.CanContentScroll="True" Background="{x:Null}" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+                    <materialDesign:TransitioningContent>
+                        <ScrollViewer Name="scroll" Background="{x:Null}"  CanContentScroll="True" MaxWidth="940" Margin="0 0 0 0" Height="550">
+                            <WrapPanel Background="{x:Null}" x:Name="MyBookWrapPanel" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible" />
+                        </ScrollViewer>
+                    </materialDesign:TransitioningContent>
+                </Grid>
+            </StackPanel>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>

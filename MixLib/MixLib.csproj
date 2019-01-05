@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{589D93EB-D163-44CD-8291-499A174DE195}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MixLib</RootNamespace>
+    <AssemblyName>MixLib</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.1.2\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=2.4.0.1044, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.2.4.0.1044\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewBookAdmin.xaml.cs">
+      <DependentUpon>AddNewBookAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BookItem.xaml.cs">
+      <DependentUpon>BookItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Books.cs" />
+    <Compile Include="CommentItem.xaml.cs">
+      <DependentUpon>CommentItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dev.cs" />
+    <Compile Include="DeveloperWindow.xaml.cs">
+      <DependentUpon>DeveloperWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805061845186_InitialCreate.cs" />
+    <Compile Include="Migrations\201805061845186_InitialCreate.Designer.cs">
+      <DependentUpon>201805061845186_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805071617544_Okey.cs" />
+    <Compile Include="Migrations\201805071617544_Okey.Designer.cs">
+      <DependentUpon>201805071617544_Okey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805080915133_Kek.cs" />
+    <Compile Include="Migrations\201805080915133_Kek.Designer.cs">
+      <DependentUpon>201805080915133_Kek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805080918452_Kek1.cs" />
+    <Compile Include="Migrations\201805080918452_Kek1.Designer.cs">
+      <DependentUpon>201805080918452_Kek1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805080922499_Kerk1.cs" />
+    <Compile Include="Migrations\201805080922499_Kerk1.Designer.cs">
+      <DependentUpon>201805080922499_Kerk1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805080927430_SampleMigrations.cs" />
+    <Compile Include="Migrations\201805080927430_SampleMigrations.Designer.cs">
+      <DependentUpon>201805080927430_SampleMigrations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="MyAccount.xaml.cs">
+      <DependentUpon>MyAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyBookItem.xaml.cs">
+      <DependentUpon>MyBookItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyBooks.xaml.cs">
+      <DependentUpon>MyBooks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpenBook.xaml.cs">
+      <DependentUpon>OpenBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpenMyBook.xaml.cs">
+      <DependentUpon>OpenMyBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpenRedBook.xaml.cs">
+      <DependentUpon>OpenRedBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Rating.cs" />
+    <Compile Include="Registration.xaml.cs">
+      <DependentUpon>Registration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBooks.xaml.cs">
+      <DependentUpon>SearchBooks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsWindow.xaml.cs">
+      <DependentUpon>SettingsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Page Include="AboutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddNewBookAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Autorization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BookItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CommentItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeveloperWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Autorization.xaml.cs">
+      <DependentUpon>Autorization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MyAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyBookItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyBooks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OpenBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OpenMyBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OpenRedBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchBooks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SettingsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Migrations\201805061845186_InitialCreate.resx">
+      <DependentUpon>201805061845186_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805071617544_Okey.resx">
+      <DependentUpon>201805071617544_Okey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805080915133_Kek.resx">
+      <DependentUpon>201805080915133_Kek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805080918452_Kek1.resx">
+      <DependentUpon>201805080918452_Kek1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805080922499_Kerk1.resx">
+      <DependentUpon>201805080922499_Kerk1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805080927430_SampleMigrations.resx">
+      <DependentUpon>201805080927430_SampleMigrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ML.png" />
+    <Resource Include="Resources\ML1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\max.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="Resources\ML2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Academ.png" />
+    <Resource Include="Resources\DarkTower.jpg" />
+    <Resource Include="Resources\HiddenRoom.jpg" />
+    <Resource Include="Resources\ImperWord.jpg" />
+    <Resource Include="Resources\LastChance.jpg" />
+    <Resource Include="Resources\ObrWin.jpg" />
+    <Resource Include="Resources\Ono.jpg" />
+    <Resource Include="Resources\PerviVsaf.jpg" />
+    <Resource Include="Resources\SvincLih.jpg" />
+    <Resource Include="Resources\UbiJiv.jpg" />
+    <Resource Include="Resources\VosstPrah.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DefaultLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\8985360d49292086aefae096b5b905b6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Books-Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\JustBooks.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

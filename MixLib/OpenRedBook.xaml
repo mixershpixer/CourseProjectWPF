@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="MixLib.OpenRedBook"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MixLib"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+               d:DesignHeight="550" d:DesignWidth="940">
+    <Grid>
+        <materialDesign:DialogHost IsOpen="False" Margin="0 0 0 0" x:Name="UpdateOk" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center">
+            <materialDesign:DialogHost.DialogContent>
+                <StackPanel Margin="10" Orientation="Vertical">
+                    <TextBlock Text="Book successfully updated" Foreground="#FF9800" FontSize="20" Margin="10"/>
+                    <Button x:Name="ComeBack" Click="ComeBack_Click" Foreground="#7E57C2" Content="Ok" Style="{DynamicResource MaterialDesignFlatButton}" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" CommandTarget="{Binding ElementName=UpdateOk}"/>
+                </StackPanel>
+            </materialDesign:DialogHost.DialogContent>
+        </materialDesign:DialogHost>
+        <materialDesign:DialogHost IsOpen="False" Margin="0 0 0 0" x:Name="Fail" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center">
+            <materialDesign:DialogHost.DialogContent>
+                <StackPanel Margin="10" Orientation="Vertical">
+                    <TextBlock Text="Book not updated check all fields" Foreground="#FF9800" FontSize="20" Margin="10"/>
+                    <Button Foreground="#7E57C2" Content="Ok" Style="{DynamicResource MaterialDesignFlatButton}" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" CommandTarget="{Binding ElementName=Fail}"/>
+                </StackPanel>
+            </materialDesign:DialogHost.DialogContent>
+        </materialDesign:DialogHost>
+        <materialDesign:TransitioningContent>
+            <materialDesign:TransitioningContent.OpeningEffects>
+                <materialDesign:TransitionEffect Duration="0:0:0.5" Kind="SlideInFromRight" />
+                <materialDesign:TransitionEffect Duration="0:0:0.5" Kind="FadeIn" />
+            </materialDesign:TransitioningContent.OpeningEffects>
+            <StackPanel>
+                <StackPanel Margin="20 10 0 0">
+                    <Button x:Name="BackBtn" Click="BackBtn_Click" Style="{DynamicResource MaterialDesignFloatingActionButton}" FontSize="18" VerticalAlignment="Center" Background="#FF9800" BorderBrush="#FF9800" HorizontalAlignment="Left" Height="51" Width="51"  >
+                        <materialDesign:PackIcon Kind="ChevronDoubleLeft" Foreground="White" Width="51" Height="51" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Bottom"/>
+                        <Button.ToolTip>
+                            <ToolTip Placement="Mouse">
+                                Back to the list
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <StackPanel Margin="50,15,0,20">
+                        <Image x:Name="PictureBox" Source="Resources/DefaultLogo.png" Width="230" Height="300" Stretch="Fill" Margin=" 0 0 0 0 "/>
+                        <Button x:Name="ChangeImage" Margin="0 10 0 0" Width="150" Foreground="White" Content="Change book&#xA;     image" FontSize="15" Background="#FF9800" VerticalContentAlignment="Top" Height="51" Click="ChangeImage_Click" />
+
+                    </StackPanel>
+                    <StackPanel Width="600" Margin="10,0,-10,10" Height="392">
+                        <TextBox x:Name="BookTitle" Margin="10 0 0 0" FontSize="34" Text="" Foreground="#FF9800"/>
+                        <TextBox x:Name="Author" Margin="10 0 0 0" FontSize="30" Text="" Foreground="Black" PreviewTextInput="Disc_PreviewTextInput"/>
+                        <TextBox x:Name="Country" Margin="10 0 0 0" FontSize="24" Text="" Foreground="#FF706C65" PreviewTextInput="Disc_PreviewTextInput"/>
+                        <TextBox x:Name="Year" Margin="10 0 0 0" FontSize="24" Text="" Foreground="#FF706565" GotFocus="Year_GotFocus" />
+                        <TextBox x:Name="Genre" Margin="10 0 0 0" FontSize="24" Text="" Foreground="#FF706C65" PreviewTextInput="Disc_PreviewTextInput"/>
+                        <ScrollViewer>
+                            <TextBox x:Name="Disc" Margin="10 0 0 0" FontSize="20" Text="" TextWrapping="Wrap" MaxLength="300" Foreground="#FF706C65" VerticalContentAlignment="Top" Height="164"/>
+                        </ScrollViewer>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Margin="0 20 0 0">
+                    <Button x:Name="Update"  Width="300" Content="Update" Click="Update_Click" Background="#FF9800" Foreground="White" FontSize="18"/>
+                </StackPanel>
+            </StackPanel>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>

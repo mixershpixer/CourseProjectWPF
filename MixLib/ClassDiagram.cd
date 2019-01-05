@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MixLib.AboutPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="3.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AboutPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.AddNewBookAdmin" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="4.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAJAAAgoAAAAAAAAAAAAAAAAAACIBAAEQBBBAAA=</HashCode>
+      <FileName>AddNewBookAdmin.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.Autorization" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAgAAQCAADBAAAAAAQA=</HashCode>
+      <FileName>Autorization.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.BookItem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="1.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAICAABIAAAAAEABAAgIACAAAAgACCIAABAAAAAQA=</HashCode>
+      <FileName>BookItem.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.Books" Collapsed="true">
+    <Position X="10.25" Y="1" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Books.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MixLib.Book" Collapsed="true">
+    <Position X="8.75" Y="1" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAGgAAAAAQAAAAAgAIAAAAAAAIAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Books.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MixLib.CommentItem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommentItem.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.Dev" Collapsed="true">
+    <Position X="10.25" Y="5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dev.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MixLib.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAACAAAAAIAAAAAQAEAAAAAAEAAADACCAAgAAQAQI=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.MyAccount" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="1" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>MyAccount.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.MyBookItem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="2" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAICAABIAAAAAEABAAgIACAAAAgACCAAABAAAAAQA=</HashCode>
+      <FileName>MyBookItem.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.MyBooks" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="3" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyBooks.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.OpenBook" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="2.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAwAAAAIAQAIAQAAAAAEQAEAAAAAAQACCCABAQAAAAg=</HashCode>
+      <FileName>OpenBook.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.OpenMyBook" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="4" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAASAAAACIAAAAAAAAQAAAAAAAAAAAACAAAAABAAA=</HashCode>
+      <FileName>OpenMyBook.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.OpenRedBook" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="3.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABIAAAIAQAAAAAAQAAAAAACABAIACAAAAARAAA=</HashCode>
+      <FileName>OpenRedBook.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.Rating" Collapsed="true">
+    <Position X="7" Y="2" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>CAAAgAAAAAAQAAAAAAAAAAAAAAAACAAABEAAAAAAAAA=</HashCode>
+      <FileName>Rating.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MixLib.Registration" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="2.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAQAAAAABACAAAACAAAAAAACQACCAAAAAEQA=</HashCode>
+      <FileName>Registration.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.SearchBooks" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="4.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAQAAIAAAAgAAQAAAAAAAACACAAAACAAJABBA=</HashCode>
+      <FileName>SearchBooks.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.SettingsWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="2.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAH4BAAAAAAAAcA+AAAAACAAAAAA=</HashCode>
+      <FileName>SettingsWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MixLib.User" Collapsed="true">
+    <Position X="5.25" Y="1" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAEAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9.16" />
+</ClassDiagram>

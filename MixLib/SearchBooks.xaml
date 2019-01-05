@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="MixLib.SearchBooks"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MixLib"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             
+             mc:Ignorable="d" 
+               d:DesignHeight="550" d:DesignWidth="940">
+    <Grid Margin="0 0 0 0">
+        <materialDesign:TransitioningContent x:Name="Trance" OpeningEffect="{materialDesign:TransitionEffect SlideInFromRight, Duration=0:0:0.5}">
+            <StackPanel Background="{x:Null}">
+                <StackPanel Height="50" Orientation="Horizontal" Margin="15 0 0 0">
+                    <StackPanel Height="50" Orientation="Horizontal">
+                        <materialDesign:PackIcon x:Name="Icon1" Kind="Magnify" Margin="0 12 0 0" Foreground="#FF9800" Width="40" Height="40" HorizontalAlignment="Center" VerticalContentAlignment="Bottom" VerticalAlignment="Top"/>
+                        <TextBox x:Name="SearchTextBox" Height="40" Margin="0,0,10,-0.255"  materialDesign:HintAssist.Hint="Search by"  BorderBrush="Black" Background="{x:Null}" Foreground="Black" FontSize="20"  Cursor="Pen" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="238" VerticalAlignment="Bottom" GotFocus="SearchTextBox_GotFocus"/>
+                        <ComboBox x:Name="SearchCombo" Width="150" Height="40" Margin="0 0 10 0" materialDesign:HintAssist.Hint="Search by" SelectedIndex="0"  Foreground="Black" FontSize="20" VerticalAlignment="Bottom">
+                            <ComboBoxItem Content="Book title"/>
+                            <ComboBoxItem Content="Author"/>
+                            <ComboBoxItem Content="Publishing country"/>
+                            <ComboBoxItem Content="Genre"/>
+                            <ComboBoxItem Content="Publishing year"/>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <Button x:Name="Search" Height="40" Click="Search_Click" Margin="0 9 0 0" Content="Search" Foreground="White" FontSize="18" Background="#FF9800" BorderBrush="#FFF5F1E4"/>
+                        <materialDesign:DialogHost IsOpen="False" Margin="0 0 0 0" x:Name="SearchFail" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center">
+                            <materialDesign:DialogHost.DialogContent>
+                                <StackPanel Margin="10" Orientation="Vertical">
+                                    <TextBlock Text="No results" Foreground="#FF9800" FontSize="20" Margin="10"/>
+                                    <Button Foreground="#7E57C2" Content="Try again" Style="{DynamicResource MaterialDesignFlatButton}" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" CommandTarget="{Binding ElementName=SearchFail}"/>
+                                </StackPanel>
+                            </materialDesign:DialogHost.DialogContent>
+                        </materialDesign:DialogHost>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="ViewAll" Height="40" Margin="10 9 0 0" Content="Update list" Click="ViewAll_Click" Foreground="White" FontSize="18" Background="#FF9800" BorderBrush="#FFF5F1E4"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="Sort" Height="40" Click="Sort_Click" Margin="10 9 0 0" Content="Sort by" Foreground="White" FontSize="18" Background="#FF9800" BorderBrush="#FFF5F1E4"/>
+                        <ComboBox x:Name="SortCombo" Width="135" Height="40" Margin="10,0,10,-0.255" materialDesign:HintAssist.Hint="Search by" SelectedIndex="0"  Foreground="Black" FontSize="20" VerticalAlignment="Bottom">
+                            <ComboBoxItem Content="Book title"/>
+                            <ComboBoxItem Content="Author"/>
+                            <ComboBoxItem Content="Publishing country"/>
+                            <ComboBoxItem Content="Genre"/>
+                            <ComboBoxItem Content="Publishing year"/>
+                        </ComboBox>
+                    </StackPanel>
+                </StackPanel>
+                <Grid Height="480" ScrollViewer.CanContentScroll="True" Background="{x:Null}" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+                    <materialDesign:TransitioningContent>
+                        <materialDesign:TransitioningContent.OpeningEffects>
+                            <materialDesign:TransitionEffect Duration="0:0:0.5" Kind="SlideInFromRight" />
+                            <materialDesign:TransitionEffect Duration="0:0:0.5" Kind="FadeIn" />
+                        </materialDesign:TransitioningContent.OpeningEffects>
+                        <ScrollViewer Name="scroll" Background="{x:Null}"  CanContentScroll="True" MaxWidth="940" Margin="0,10,0,0">
+                            <WrapPanel Background="{x:Null}" x:Name="ListBookWrapPanel" ScrollViewer.VerticalScrollBarVisibility="Visible" />
+                        </ScrollViewer>
+                    </materialDesign:TransitioningContent>
+                </Grid>
+            </StackPanel>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>
